@@ -1,34 +1,86 @@
-main .hero-container > div {
-  max-width: unset;
-}
-
-main .hero-container {
-  padding: 0;
-}
 
 .hero {
-  position: relative;
-  padding: 32px;
-  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-}
-
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
+.hero-wrapper {
+  display: flex;
   width: 100%;
-  height: 100%;
+  max-width: 1200px;
+  background-color: var(--background-color);
+}
+
+.hero-left-panel {
+  flex: 1;
+  padding: 40px;
+  background-color: white;
+}
+
+.hero-right-panel {
+  flex: 1;
+}
+
+.hero-left-panel h1 {
+  font-size: var(--heading-font-size-xxl);
+  color: var(--text-color);
+}
+
+.hero-left-panel p {
+  font-size: var(--body-font-size-m);
+  color: var(--text-color);
+  margin: 20px 0;
+}
+
+.hero-left-panel a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: 2px solid var(--link-color);
+  border-radius: 30px;
+  text-align: center;
+  font-size: var(--body-font-size-m);
+  font-weight: 600;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.hero-left-panel a:hover {
+  background-color: var(--link-hover-color);
+  color: var(--background-color);
+}
+
+.hero-right-panel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .hero-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-right-panel {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-left-panel,
+  .hero-right-panel {
+    padding: 20px;
+  }
+
+  .hero-left-panel h1 {
+    font-size: var(--heading-font-size-xl);
+  }
+
+  .hero-left-panel p,
+  .hero-left-panel a {
+    font-size: var(--body-font-size-s);
+  }
 }
