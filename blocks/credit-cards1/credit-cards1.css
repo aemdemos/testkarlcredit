@@ -1,0 +1,66 @@
+
+.credit-cards1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.credit-cards1 .credit-card {
+  border: 1px solid var(--dark-color);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  padding: 20px;
+  background-color: var(--background-color);
+  max-width: 300px;
+  width: 100%;
+}
+
+.credit-cards1 .credit-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.credit-cards1 h3 {
+  font-size: var(--heading-font-size-s);
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.credit-cards1 ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.credit-cards1 ul li {
+  margin-bottom: 10px;
+}
+
+.credit-cards1 a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.credit-cards1 a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.credit-cards1 p {
+  margin: 10px 0;
+}
+
+.credit-cards1 h2 {
+  font-size: var(--heading-font-size-m);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+@media (min-width: 900px) {
+  .credit-cards1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}

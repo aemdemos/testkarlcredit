@@ -1,0 +1,39 @@
+
+.lookingpersonal {
+  text-align: center;
+  background-color: var(--background-color);
+  padding: 20px;
+}
+
+.lookingpersonal-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.lookingpersonal-link-wrapper {
+  display: inline-block;
+}
+
+.lookingpersonal-link {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  font-weight: 600;
+  color: var(--link-color);
+  text-decoration: none;
+  border: 2px solid var(--link-color);
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lookingpersonal-link:hover,
+.lookingpersonal-link:focus {
+  background-color: var(--link-hover-color);
+  color: var(--background-color);
+  text-decoration: none;
+}

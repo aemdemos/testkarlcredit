@@ -2,34 +2,29 @@
 .howto {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .howto > div > div {
-  border: 1px solid var(--light-color);
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 8px;
   background-color: var(--background-color);
 }
 
 .howto h3 {
+  font-family: var(--heading-font-family);
   font-size: var(--heading-font-size-s);
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 8px;
 }
 
 .howto p {
-  font-size: var(--body-font-size-xs);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
   color: var(--text-color);
-}
-
-.howto a {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-.howto a:hover {
-  color: var(--link-hover-color);
+  margin-top: 0;
 }

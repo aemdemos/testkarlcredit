@@ -1,46 +1,18 @@
 
 export default function decorate(block) {
+  // Set up the block with a flex container
   block.style.display = 'flex';
   block.style.justifyContent = 'space-between';
-  block.style.gap = '20px';
 
-  const children = block.querySelectorAll('div > div');
-
-  children.forEach((child) => {
-    child.style.border = '1px solid var(--light-color)';
-    child.style.borderRadius = '8px';
-    child.style.padding = '20px';
-    child.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+  // Iterate through each child of the block
+  Array.from(block.children[0].children).forEach((child) => {
+    // Style each child (the inner div)
     child.style.flex = '1';
+    child.style.border = '1px solid var(--dark-color)';
+    child.style.borderRadius = '4px';
+    child.style.padding = '16px';
+    child.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+    child.style.margin = '0 8px';
     child.style.backgroundColor = 'var(--background-color)';
-  });
-
-  const headings = block.querySelectorAll('h3');
-  headings.forEach((heading) => {
-    heading.style.fontSize = 'var(--heading-font-size-s)';
-    heading.style.fontWeight = '700';
-    heading.style.marginBottom = '10px';
-  });
-
-  const paragraphs = block.querySelectorAll('p');
-  paragraphs.forEach((paragraph) => {
-    paragraph.style.fontSize = 'var(--body-font-size-xs)';
-    paragraph.style.color = 'var(--text-color)';
-  });
-
-  const links = block.querySelectorAll('a');
-  links.forEach((link) => {
-    link.style.color = 'var(--link-color)';
-    link.style.textDecoration = 'none';
-  });
-
-  links.forEach((link) => {
-    link.addEventListener('mouseover', () => {
-      link.style.color = 'var(--link-hover-color)';
-    });
-
-    link.addEventListener('mouseout', () => {
-      link.style.color = 'var(--link-color)';
-    });
   });
 }

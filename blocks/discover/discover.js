@@ -1,25 +1,23 @@
 
 export default function decorate(block) {
-  const container = document.createElement('div');
-  container.className = 'discover-container';
+  block.style.display = 'flex';
+  block.style.alignItems = 'center';
+  block.style.justifyContent = 'space-between';
+  block.style.padding = '20px';
+  block.style.backgroundColor = 'white';
 
+  const imgContainer = block.querySelector('picture');
   const textContainer = document.createElement('div');
-  textContainer.className = 'discover-text';
+  textContainer.className = 'text-container';
 
-  const imageContainer = document.createElement('div');
-  imageContainer.className = 'discover-image';
-
-  const imageElement = block.querySelector('picture');
-  imageContainer.appendChild(imageElement);
-
-  const textElements = block.querySelectorAll('h2, p, a');
-  textElements.forEach((element) => {
-    textContainer.appendChild(element);
+  const elements = Array.from(block.children[0].children[0].children);
+  elements.forEach(el => {
+    if (el.tagName !== 'PICTURE') {
+      textContainer.appendChild(el);
+    }
   });
 
-  container.appendChild(imageContainer);
-  container.appendChild(textContainer);
-
   block.innerHTML = '';
-  block.appendChild(container);
+  block.appendChild(imgContainer);
+  block.appendChild(textContainer);
 }

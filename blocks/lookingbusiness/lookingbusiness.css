@@ -1,0 +1,34 @@
+
+.lookingbusiness {
+  margin: 40px 0;
+}
+
+.lookingbusiness h2 {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+  margin: 0;
+}
+
+.lookingbusiness p {
+  margin: 0;
+}
+
+.lookingbusiness a.button.secondary {
+  background-color: transparent;
+  border: 1px solid var(--dark-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: var(--body-font-size-s);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+}
+
+.lookingbusiness a.button.secondary:hover,
+.lookingbusiness a.button.secondary:focus {
+  background-color: var(--light-color);
+  color: var(--text-color);
+}

@@ -1,0 +1,39 @@
+
+.things {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.things h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.things ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.things li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.things a {
+  color: #035fe6;
+  text-decoration: none;
+}
+
+.things a:hover {
+  text-decoration: underline;
+  color: #136ff6;
+}
+
+.things sup {
+  vertical-align: super;
+  font-size: 12px;
+}
