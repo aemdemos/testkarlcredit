@@ -1,0 +1,104 @@
+
+.cc2-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--background-color);
+  font-family: var(--body-font-family);
+}
+
+.cc2-card {
+  flex: 1;
+  border: 1px solid var(--light-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.cc2-card-img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cc2-card-img img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.cc2-card-content {
+  font-size: var(--body-font-size-s);
+  color: var(--text-color);
+}
+
+.cc2-card-title {
+  font-size: var(--heading-font-size-m);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cc2-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.cc2-card-list li {
+  margin-bottom: 10px;
+}
+
+.cc2-card-paragraph {
+  margin-bottom: 20px;
+}
+
+.cc2-card-paragraph a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.cc2-card-paragraph a:hover {
+  text-decoration: underline;
+}
+
+.cc2-tradeoffs-title {
+  font-size: var(--heading-font-size-s);
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cc2-tradeoffs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.cc2-tradeoffs-list li {
+  margin-bottom: 10px;
+}
+
+.cc2-apply-now {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 5px 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--background-color);
+  background-color: var(--link-color);
+  margin: 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 30px;
+}
+
+.cc2-apply-now:hover,
+.cc2-apply-now:focus {
+  background-color: var(--link-hover-color);
+  cursor: pointer;
+}

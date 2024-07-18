@@ -1,0 +1,40 @@
+
+.know {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 16px;
+}
+
+.know .know-header {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  scroll-margin: calc(var(--nav-height) + 1em);
+}
+
+.know .know-content {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.know .know-content li {
+  margin-bottom: 1em;
+}
+
+.know .know-content a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.know .know-content a:hover,
+.know .know-content a:focus {
+  text-decoration: underline;
+  color: var(--link-hover-color);
+}

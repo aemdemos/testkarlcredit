@@ -1,0 +1,35 @@
+
+.howto {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.howto > div > div {
+  border: 1px solid var(--light-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  background-color: var(--background-color);
+}
+
+.howto h3 {
+  font-size: var(--heading-font-size-s);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.howto p {
+  font-size: var(--body-font-size-xs);
+  color: var(--text-color);
+}
+
+.howto a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.howto a:hover {
+  color: var(--link-hover-color);
+}
