@@ -16,9 +16,7 @@ export default function decorate(block) {
   }
 
   // Create and append the image to the right container
-  const img = document.createElement('img');
-  img.src = 'http://localhost:3000/media_18855d8175694ea9f4367ae1063a9e8a1a76d3c50.jpeg?width=750&format=jpeg&optimize=medium';
-  img.alt = 'credit cards';
+  const img = block.querySelector('img');
   rightContainer.appendChild(img);
 
   // Append left and right containers to the wrapper
