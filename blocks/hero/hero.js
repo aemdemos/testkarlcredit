@@ -10,14 +10,16 @@ export default function decorate(block) {
   const rightContainer = document.createElement('div');
   rightContainer.className = 'hero-right-container';
 
+  
+  // Create and append the image to the right container
+  const img = block.querySelector('img');
+  rightContainer.appendChild(img);
+  
   // Move the current content to the left container
   while (block.firstChild) {
     leftContainer.appendChild(block.firstChild);
   }
 
-  // Create and append the image to the right container
-  const img = block.querySelector('img');
-  rightContainer.appendChild(img);
 
   // Append left and right containers to the wrapper
   wrapper.appendChild(leftContainer);
