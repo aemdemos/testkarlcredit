@@ -1,0 +1,45 @@
+
+.lookinga {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding: 20px;
+  border: 1px solid var(--dark-color);
+  border-radius: 8px;
+}
+
+.lookinga-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.lookinga-heading {
+  font-size: var(--heading-font-size-xl);
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 0;
+}
+
+.lookinga-paragraph {
+  margin: 0;
+}
+
+.lookinga-link {
+  font-size: var(--body-font-size-s);
+  color: var(--link-color);
+  text-decoration: none;
+  border: 1px solid var(--dark-color);
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: var(--light-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lookinga-link:hover {
+  background-color: var(--dark-color);
+  color: var(--link-hover-color);
+}

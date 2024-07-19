@@ -1,18 +1,15 @@
-export default function decorate(block) {
-  const cols = [...block.firstElementChild.children];
-  block.classList.add(`columns-${cols.length}-cols`);
 
-  // setup image columns
-  [...block.children].forEach((row) => {
-    [...row.children].forEach((col) => {
-      const pic = col.querySelector('picture');
-      if (pic) {
-        const picWrapper = pic.closest('div');
-        if (picWrapper && picWrapper.children.length === 1) {
-          // picture is only content in column
-          picWrapper.classList.add('columns-img-col');
-        }
-      }
-    });
-  });
+export default function decorate(block) {
+  // Add class to the outer block
+  block.classList.add('columns');
+
+  // Select the inner elements
+  const columnsInner = block.querySelector('.columns-inner');
+  const columnsImage = block.querySelector('.columns-image');
+  const columnsText = block.querySelector('.columns-text');
+
+  // Add classes to inner elements
+  columnsInner.classList.add('columns-inner-styled');
+  columnsImage.classList.add('columns-image-styled');
+  columnsText.classList.add('columns-text-styled');
 }

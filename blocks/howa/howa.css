@@ -1,0 +1,39 @@
+
+.howa {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.howa-article {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 30%;
+}
+
+.howa-article h3 {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-m);
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: var(--text-color);
+}
+
+.howa-article p {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  color: var(--text-color);
+  margin: 0;
+}
+
+.howa-article a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.howa-article a:hover {
+  text-decoration: underline;
+}

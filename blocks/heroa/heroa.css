@@ -1,0 +1,86 @@
+
+.heroa {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  padding: 0;
+}
+
+.heroa-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.heroa-content {
+  max-width: 50%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.heroa-content::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 100%;
+  background: yellow;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.heroa-picture {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.heroa-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroa-title {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xxl);
+  color: black;
+  margin-bottom: 20px;
+}
+
+.heroa-description {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  color: black;
+  margin-bottom: 20px;
+}
+
+.heroa-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroa-link {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  color: var(--link-color);
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.heroa-link:hover {
+  background-color: var(--link-hover-color);
+  color: white;
+}
